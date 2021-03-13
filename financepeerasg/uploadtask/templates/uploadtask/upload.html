@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content%}
+          <!-- / .main-navbar -->
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <h3 class="page-title">Add Store</h3>
+              </div>
+            </div>
+            <!-- End Page Header -->
+            <!-- Default Light Table -->
+            <div class="row">
+              <div class="col-lg-12">
+
+
+
+                    <form action = "" method = "POST" enctype="multipart/form-data">
+                         {% csrf_token %}
+                          {{form}}
+                          <div align="center">
+
+                              <button type="submit" id="saveBtn" class="btn btn-primary from_hour-4">Submit</button>
+                            </div>
+                    </form>
+
+
+
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End Default Light Table -->
+          </div>
+
+{% endblock%}

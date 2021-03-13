@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content%}
+<!-- / .main-navbar -->
+          <div class="main-content-container container-fluid px-4">
+            <!-- Page Header -->
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <h3 class="page-title">All </h3>
+              </div>
+            </div>
+            <table>
+                <tr>
+                  <th>Id</th>
+                  <th>User Id</th>
+                  <th>title</th>
+                  <th>Body</th>
+                </tr>
+              {% for instance in object_list %}
+                <tr>
+                  <td>{{instance.id}}</td>
+                  <td>{{instance.userId}}</td>
+                  <td>{{instance.title}}</td>
+                  <td>{{instance.body}}</td>
+                </tr>
+              {% endfor %}
+            </table>
+
+          </div>
+
+{% endblock%}
