@@ -22,8 +22,10 @@ venv\Scripts\activate  & :: On Windows
 ```shell
 pip install -r requirements.txt
 ```
+
 + Database migrations
 ```
+cd financepeerasg
 python manage.py makemigrations
 python manage.py migrate
 ```
