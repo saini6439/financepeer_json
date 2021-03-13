@@ -63,5 +63,6 @@ Password : admin@123
 python manage.py runserver
 ```
 
-Open [localhost:8000/admin](http://localhost:8000/admin)
+Open [localhost:8000/login](http://localhost:8000/login)
+Create a account and login using that account after that upload your json file and then data is uploaded in visible to you.
 
